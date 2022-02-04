@@ -10,6 +10,15 @@ const getTodo=()=>{
         text:"Learn Vue Testing",
         completed: false
     }])
-    return {todos}
+    const newTodo = ref('')
+    const createTodo=()=>{
+        todos.value.push({
+            id:2,
+            text: newTodo.value,
+            completed:false
+        })
+        newTodo.value = ''
+    }
+    return {todos,newTodo,createTodo}
 }
 export default getTodo
