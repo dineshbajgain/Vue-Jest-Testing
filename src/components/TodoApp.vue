@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ todos }}</h1>
+      <ul>
+          <li v-for="todo in todos" :key="todo.id" data-text="todo">
+            {{todo.text}}
+          </li>
+      </ul>
   </div>
 </template>
 

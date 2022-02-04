@@ -7,7 +7,7 @@ interface Todo{
 const getTodo=()=>{
     const todos = ref<Todo[]>([{
         id:1,
-        text:"Learn Vue Testing.",
+        text:"Learn Vue Testing",
         completed: false
     }])
     return {todos}

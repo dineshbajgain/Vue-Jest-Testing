@@ -1,17 +1,13 @@
 <template>
-start
+  <h1>TODO APP</h1>
   <todo-app />
-end
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
 import TodoApp from './components/TodoApp.vue'
 @Options({
   components: {
-    HelloWorld,
     TodoApp
   },
 })
